@@ -7,7 +7,7 @@ fun main(){
     val (n1, n2) = readlnOrNull()
         ?.split(" ")
         ?.mapNotNull { it.toIntOrNull() }
-        ?.takeIf { it.size == 2 && it.all { num -> num in 0..10 } }
+        ?.takeIf { it.size == 2 && it.all { num -> num in 0..100 } }
         ?: error("0부터 10까지의 숫자 두개를 입력해주세요.")
 
     val row1 = readlnOrNull()
@@ -45,7 +45,7 @@ fun main(){
     println(ants)
 }
 
-fun String.validateRow(length: Int, errorMessage: String, additionalValidation: (String) -> Unit = {}): String? {
+fun String.validateRow(length: Int, errorMessage: String, additionalValidation: (String) -> Unit = {}): String {
     val regex = Regex("""^(?:([A-Z])(?!.*\1)){$length}${'$'}""")
     return if (regex.matches(this)) {
         additionalValidation(this)
