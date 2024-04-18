@@ -7,7 +7,7 @@ fun main(){
     val (n1, n2) = readlnOrNull()
         ?.split(" ")
         ?.mapNotNull { it.toIntOrNull() }
-        ?.takeIf { it.size == 2 && it.all { num -> num in 0..100 } }
+        ?.takeIf { it.size == 2 && it.all { num -> num in 0..10 } }
         ?: error("0부터 10까지의 숫자 두개를 입력해주세요.")
 
     val row1 = readlnOrNull()
@@ -21,13 +21,13 @@ fun main(){
         }
         ?: return
 
-    val time = readlnOrNull()
+    val t = readlnOrNull()
         ?.toIntOrNull()
         ?.takeIf { it in 0..50 }
         ?:error("0~50숫자만 입력해주세요")
 
-    var ants = row1.reversed()+row2
-    repeat(time){
+    var ants = row1.reversed()+row2 //"CBADEF"
+    repeat(t){
         var i = 0
         while (i < ants.length-1){
             if(ants[i] in row1 && ants[i+1] in row2){
