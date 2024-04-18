@@ -1,4 +1,4 @@
-package COCI07
+package COCI062
 
 //https://dmoj.ca/problem/coci06c2p3
 //COCI '06 Contest 2 #3 Kolone

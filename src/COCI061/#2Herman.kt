@@ -1,4 +1,4 @@
-package COCI06
+package COCI061
 
 //https://dmoj.ca/problem/coci06c1p2
 //COCI '06 Contest 1 #2 Herman

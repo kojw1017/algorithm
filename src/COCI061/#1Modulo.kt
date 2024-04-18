@@ -1,4 +1,4 @@
-package COCI06
+package COCI061
 
 //https://dmoj.ca/problem/coci06c1p1
 //COCI '06 Contest 1 #1 Modulo

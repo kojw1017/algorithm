@@ -1,4 +1,4 @@
-package COCI06
+package COCI061
 
 //https://dmoj.ca/problem/coci06c1p3
 //COCI '06 Contest 1 #3 Okviri

@@ -1,4 +1,4 @@
-package COCI07
+package COCI062
 
 //https://dmoj.ca/problem/coci06c2p1
 //COCI '06 Contest 2 #1 R2
